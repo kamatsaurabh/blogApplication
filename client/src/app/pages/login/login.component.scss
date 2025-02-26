@@ -1,0 +1,96 @@
+/* Reset default margins and ensure full height */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.container {
+    background-color: #121212; /* Deep dark background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%); /* Subtle gradient */
+}
+
+/* Login card styling */
+.login-card {
+    background-color: #1e1e1e; /* Slightly lighter card background */
+    padding: 40px 30px; /* More spacious padding */
+    border-radius: 16px; /* Larger, smoother border-radius */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+    width: 100%;
+    max-width: 420px; /* Slightly wider card */
+    border: 1px solid #2a2a2a; /* Subtle border */
+}
+
+/* Heading styling */
+.login-card h2 {
+    color: #f0f0f0; /* Softer white */
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 28px; /* Larger heading */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Button styling */
+.login-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px; /* Taller buttons */
+    margin: 12px 0; /* More balanced spacing */
+    border: none;
+    border-radius: 12px; /* Rounded buttons */
+    color:#1e1e1e;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smoother transitions */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+/* Specific button colors with better contrast */
+button[onclick="loginWithGoogle()"] {
+    background-color: #4285f4;
+}
+
+button[onclick="loginWithFacebook()"] {
+    background-color: #4267b2; /* Slightly lighter Facebook blue */
+}
+
+/* Hover effects */
+.login-card button:hover {
+    transform: translateY(-3px); /* More pronounced lift */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0.95;
+}
+
+/* Active effects */
+.login-card button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+        max-width: 340px;
+    }
+    
+    .login-card h2 {
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+    
+    .login-card button {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+}
