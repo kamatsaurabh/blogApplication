@@ -1,0 +1,126 @@
+
+/* Container styling */
+.container {
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    width: 100%;
+}
+
+/* Post card styling */
+.post-card {
+    background-color: #1e1e1e;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid #2a2a2a;
+}
+
+/* Heading styling */
+.post-card h2 {
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Form field styling */
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+.form-field label {
+    color: #f0f0f0;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    color: #f0f0f0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Error message styling */
+.form-field .error {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 0.25rem;
+}
+
+/* Button styling */
+.post-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #4285f4;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button disabled state */
+.post-card button[disabled] {
+    background-color: #3a3a3a;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Hover effects */
+.post-card button:not([disabled]):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0.95;
+}
+
+/* Active effects */
+.post-card button:not([disabled]):active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .post-card {
+        padding: 30px 20px;
+        max-width: 340px;
+    }
+    
+    .post-card h2 {
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+    
+    .post-card button {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+}
